@@ -6,12 +6,14 @@ public class Notation {
     private int coef;
     private float note;
 
+    //Constructeur
     public Notation(String matiere, int coef, float note) {
         this.matiere = matiere;
         this.coef = coef;
         this.note = note;
     }
 
+    //Getters and Setters
     public String getMatiere() {
         return matiere;
     }
@@ -36,6 +38,7 @@ public class Notation {
         this.note = note;
     }
 
+    //Methode
     public void afficher() {
         System.out.println("Matière : " + matiere + " || Coefficient : " + coef + " || Note : " + note);
     }

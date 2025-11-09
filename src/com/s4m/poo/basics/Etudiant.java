@@ -8,13 +8,14 @@ public class Etudiant {
     private float moyenne;
     private ArrayList<Notation> notations;
 
+    //Constructeur
     public Etudiant(String nom) {
         this.nom = nom;
         this.notations = new ArrayList<>();
         this.moyenne = 0;
     }
 
-
+    //Getters and Setters
     public String getNom() {
         return nom;
     }
@@ -40,7 +41,7 @@ public class Etudiant {
         this.notations = notations;
     }
 
-
+    //Methodes
     public void calculerMoyenne() {
         var sumCoef = 0;
         var sumCoefxNote = 0;

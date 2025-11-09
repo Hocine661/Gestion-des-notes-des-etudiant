@@ -21,6 +21,7 @@ public class TestEtudiant {
             System.out.println("Nom de la matiére :");
             String matiere = sc.nextLine();
 
+            //Condition pour coef
             int coef;
             do {
                 System.out.println("Coefficient : ");
@@ -30,6 +31,7 @@ public class TestEtudiant {
                 }
             } while (coef <= 0);
 
+            //condition pour note
             float note;
             do {
                 System.out.println("Note :");
@@ -42,6 +44,7 @@ public class TestEtudiant {
             etudiant.ajouterNotation(new Notation(matiere, coef, note));
         }
 
+        //Appel aux methodes
         etudiant.calculerMoyenne();
         etudiant.genereAvis();
         etudiant.afficher();
